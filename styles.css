@@ -2,3 +2,18 @@
  * notes were created for Srujam's CSE 110 Lab 2 and the styles are created 
  * for lab 3. All of these styles should pass the online validator. */
 
+p {
+    color: rgb(50, 50, 50);
+}
+
+.section-header {
+    color: hsl(200, 50, 25);
+}
+
+#main-header {
+    color: #000
+}
+
+a {
+    color: color(display-p3 0 0.7 0.3);
+}
