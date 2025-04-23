@@ -3,8 +3,17 @@
  * for lab 3. All of these styles should pass the online validator. 
  */
 
+
+.section-header {
+    color: hsl(200, 50, 25);
+}
+
 :root {
     --h3-spacing: 10px;
+}
+
+* {
+    text-align: start;
 }
 
 p {
@@ -19,11 +28,8 @@ h3 {
     margin: var(--h3-spacing);
 }
 
-.section-header {
-    color: hsl(200, 50, 25);
-}
-
 #main-header {
+    text-decoration: underline;
     color: #000
 }
 
