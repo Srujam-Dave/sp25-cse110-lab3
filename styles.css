@@ -3,17 +3,25 @@
  * for lab 3. All of these styles should pass the online validator. 
  */
 
-
-.section-header {
-    color: hsl(200, 50, 25);
-}
-
 :root {
     --h3-spacing: 10px;
 }
 
+nav {
+    position: fixed;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    flex-grow: 1;
+}
+
 * {
     text-align: start;
+    position: static;
 }
 
 p {
@@ -25,18 +33,18 @@ p {
 }
 
 h3 {
-    margin: var(--h3-spacing);
+    margin: var(--h3-spacing, 10px);
 }
 
 #main-header {
     text-decoration: underline;
-    color: #000
+    color: #000;
 }
 
 a {
     color: color(display-p3 0 0.7 0.3);
     margin: auto;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 5px;
 }
 
 form {
@@ -49,4 +57,31 @@ form {
     border-color: rosybrown;
     border-width: 3px;
     border-radius: 1px;
+
+    max-width: 1000px;
+    display: flex;
+}
+
+section {
+    height: auto;
+    max-height: 1000px;
+    display: block;
+}
+
+.img-sizing {
+    height: 300px;
+    width: 300px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    column-gap: 10px;
+}
+
+@media (maxwidth: 1000px) {
+    body {
+        font-size: 10px;   
+    }
 }
