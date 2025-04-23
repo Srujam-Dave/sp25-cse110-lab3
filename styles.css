@@ -1,9 +1,22 @@
 /* This is the stylesheet for the Srujam Fan Club Meeting notes. These meeting
  * notes were created for Srujam's CSE 110 Lab 2 and the styles are created 
- * for lab 3. All of these styles should pass the online validator. */
+ * for lab 3. All of these styles should pass the online validator. 
+ */
+
+:root {
+    --h3-spacing: 10px;
+}
 
 p {
     color: rgb(50, 50, 50);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1mm;
+    margin-right: 1cm;
+}
+
+h3 {
+    margin: var(--h3-spacing);
 }
 
 .section-header {
@@ -16,4 +29,18 @@ p {
 
 a {
     color: color(display-p3 0 0.7 0.3);
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+form {
+    margin-top: 2%;
+    padding-top: 1em;
+    padding-bottom:1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    border-color: rosybrown;
+    border-width: 3px;
+    border-radius: 1px;
 }
